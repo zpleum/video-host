@@ -14,47 +14,12 @@
       width: 80%;
       height: 80%;
       border: 0;
-      display: none;
     }
-    .overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      display: flex; justify-content: center; align-items: center;
-      background: rgba(0,0,0,0.7);
-      z-index: 10;
-    }
-    .play-btn {
-      padding: 30px 40px;
-      font-size: 2rem;
-      color: #fff;
-      background: #007BFF;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .play-btn:hover { background: #0056b3; }
   </style>
 </head>
 <body>
 
-  <div class="overlay" id="overlay">
-    <button class="play-btn" id="playBtn">▶</button>
-  </div>
-
-  <iframe id="videoFrame" src="https://short.icu/qTw13jk9n" allowfullscreen></iframe>
-
-  <script>
-    const playBtn = document.getElementById("playBtn");
-    const overlay = document.getElementById("overlay");
-    const iframe = document.getElementById("videoFrame");
-
-    playBtn.addEventListener("click", () => {
-      overlay.style.display = "none";
-      iframe.style.display = "block";
-    });
-  </script>
+  <iframe src="https://short.icu/qTw13jk9n" allowfullscreen></iframe>
 
 </body>
 </html>
